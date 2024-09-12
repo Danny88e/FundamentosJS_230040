@@ -2,81 +2,91 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
 }
-/*Define tamaño de fuente de toda la página y agrega márgenes de tipo caja*/
+
+/* Define tamaño de fuente de toda la página y agrega márgenes de tipo caja */
 body {
-    fontsize: 1.6rem;
+    font-size: 1.6rem;
     font-family: 'Lato', sans-serif;
-    background-color: gray;
+    background-color: #f0f0f0; /* Cambiado a un color más claro para el fondo */
+    margin: 0;
+    padding: 0;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
-/*Margin, Border y Padding*/
+/* Margin, Border y Padding */
 header {
-    padding: 3rem 0;
+    padding: 3rem 1rem; /* Añadido padding lateral para mejor visualización */
+    background-color: #333; /* Fondo oscuro para el header */
+    color: #fff; /* Texto blanco en el header */
 }
 
 header h1 {
     text-align: center;
     color: wheat;
     font-size: 6rem;
+    margin: 0; /* Eliminado margen por defecto */
 }
 
 header p {
-    color:thistle;
+    color: thistle;
     text-align: center;
     font-size: 3.2rem;
+    margin: 0; /* Eliminado margen por defecto */
 }
 
-header p a {
-    text-decoration: none;
-    color:tomato;
+header p strong {
+    color: #ff6347; /* Color para destacar el texto en negrita */
 }
 
 .DOM {
     max-width: 120rem;
-    margin: 0 auto;
+    margin: 2rem auto; /* Añadido margen superior e inferior */
+    padding: 1rem; /* Añadido padding para separación del borde */
+    background-color: #fff; /* Fondo blanco para el contenido */
+    border-radius: 1rem; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidad */
 }
 
 .DOM h2 {
-    color: #fff;
+    color: #333;
     text-align: center;
 }
 
 .DOM nav a {
-    color: #fff;
-    font-size: 20px;
+    color: #333;
+    font-size: 1.6rem;
     text-decoration: none;
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 .DOM p {
     color: #2563EB;
-    font-size: 20px;
+    font-size: 1.8rem;
+    text-align: center; /* Centrado del texto */
 }
 
 .DOM #formulario {
     max-width: 500px;
     margin: 0 auto;
+    padding: 2rem; /* Añadido padding al formulario */
 }
 
 .DOM #formulario input {
     display: block;
     width: 100%;
-    border: none;
+    border: 1px solid #ddd; /* Bordes del input */
     margin-bottom: 2rem;
-    padding: 2rem;
-    border-radius: 1rem;
+    padding: 1.5rem; /* Reducido padding para mejor proporción */
+    border-radius: 0.5rem; /* Bordes redondeados menores */
 }
 
 .alerta {
     padding: 1rem;
-    text-align: center; 
+    text-align: center;
     color: #fff;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 1.6rem; /* Ajustado tamaño de fuente */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    margin: 1rem 0; /* Margen superior e inferior */
 }
 
 .alerta.error {
