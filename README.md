@@ -14,7 +14,7 @@ Previo a iniciar el desarrollo de software para web usando el framework de NodeJ
 |1.|Metodologia de Evaluacion|1|Finalizada|
 |2.|Inicializacion de Fundamentos de JS|5|Activa|
 |3.|Declaracion de Variables (Undefined/Boolean/Number)|10|Activa|
-|4.|Declaracion de Variables (Continuacion)|Por definir|Activa|
+|4.|Declaracion de Variables (Continuacion)|6|Finalizada|
 |5.|Introduccion a Objetos|Activa|
 
 
@@ -22,4 +22,4 @@ Previo a iniciar el desarrollo de software para web usando el framework de NodeJ
 Luis Daniel Suarez Escamilla
 Unidad 1
 Aplicaciones Orientadas a Servicios
-Septiembre 2024
+Septiembre 2024 .

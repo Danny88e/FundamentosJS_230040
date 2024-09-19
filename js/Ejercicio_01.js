@@ -8,9 +8,8 @@ COMENTARIOS MULTILINEA
 
 // a) Var
 
-<<<<<<< HEAD
 var minombre = "LuisDaniel" 
-=======
+
 var miNombre = "LuisDaniel"
 var misApellidos;
 var miEdad = 20;
@@ -46,4 +45,3 @@ console.log(`Creo que es ${miColorFavorito}, le atine?`)
 console.log("Analizando los datos puedo decir que:");
 console.log("Mi fecha de Nacimiento es de tipo: ", typeof(miFechaNacimiento));
 console.log("Mi color Favorito es de tipo: ", typeof(miColorFavorito));
->>>>>>> LuisDaniel-Practica3
