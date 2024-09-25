@@ -168,3 +168,85 @@ console.log(`El nuevo tipo de dato de la disponibilidad es: ${nuevoTipoDisponibi
 // console.log(`Disponibilidad: ${producto.disponible} que es del tipo: ${typeof(producto.disponible)}`);
 // console.log(`SKU: ${String(producto.SKU)} que es del tipo: ${typeof(producto.SKU)}`);
 // console.log(`Colores: ${producto.Colores} que es del tipo: ${typeof(producto.Colores)}`);
+
+
+
+
+//Eliminar las propiedades de un objeto existente
+console.log("%C6.- Elimninacion de propiedades de un objeto (,MUTACION)",style_console);
+console.log("Objeto antes de ser modificado")
+console.table(Pedido)
+//Eliminamos la propiedad de tipo de pedido
+delete Pedido.TipoPago;
+console.log("Objeto despues de ser modificado: ")
+console.table(Pedido)
+
+console.log("%c7.- Meotos para controlar la mutabilidad de los objetos, congelacion (FREZZE)", style_console);
+//Si deseamos que los objetos no sean modificados ni en estructura, ni en valor, utilizaremos el metodo FREEZE(congelar)
+console.log('La Estructura actual del objeto COMPRADOR es: ')
+console.table(Comprador)
+Comprador.FechaultimaCompra = "05/09/2024 10:15:25"
+delete Comprador.Tipo;
+Comprador.Direccion= "Calle 16 de Septiembre #102, col. Manantiales, Huauchinango, Puebla, Mexico"
+console.log('Verificamos si se realizaron los cambios en el Objeto COMPRADOR:')
+console.table(Comprador)
+
+console.log("%c8.- Metodos para controlar la mutabilidad de los objetos, Sellado (SEAL)", style.console);
+//Sin embargo en el caso de que deseamos poder podificar los valores de las propiedades del bjeto, pero no su estructura, usaremos SEAL
+Object.seal(Pedido)
+//iNTENTAMOS MODIFICAR SU ESTRUCTURA
+Pedido['FechaPedido']= "25/09/11:05:03"
+delete Pedido['Cantidad']
+console.log('Verificamos si se realizaron los cambios en el Objeto PEDIDO: ')
+console.table(Pedido)
+//Ahora intentamos modificar el valor de las propiedades
+Pedido.Cantidad= 5
+console.log('Verificamos si se realizaron los cambios en el Objeto PEDIDO: ')
+console.table(Pedido)
+
+//Desestructuracion de 2 o mas objetos
+console.log("%c9.-  Desestructuracion de 2 o mas Objetos", style_console);
+
+const{Precio: productPrecio, SKU: productoSKU, Marca: productoMarca}=Producto
+const {Correo: clienteCorreo, Pais: clientePais, SaldoActual: ClienteSaldo} =
+Comprador
+
+//Transformar valores cuantitativos en cualitativos
+if(precioProducto>2000)
+    precioProducto = "Caro"
+else
+    precioProducto = "Barato"
+
+if(ClienteSaldo > 0)
+    ClienteSaldo = "A favor"
+else if(cliente <0)
+    ClienteSaldo = "En contra"
+else
+    ClienteSaldo = "Sin deuda"
+
+//Transformar valores 
+let clienteNivel
+if(clienteTipo == "Premium")
+    clienteNivel = 1
+if(clienteTipo =="Fremium")
+    clienteNivel = 2
+if(clienteTipo =="no indetificado")
+    clienteNivel = 3
+
+//Clasificamos al cliente por su Pais de Origen
+if(clientePais == "Mexico")
+    clientePais = "Nacional"
+else
+    clientePais = "Extranjero"
+
+// OLE 
+
+let datosClientePromociones = {clienteCorreo, clientePais, clienteNivel, ClienteSaldo, productoMarca, productPrecio}
+
+//El nuevo objeto 
+
+
+
+//Operaciones sobre Objetos
+//Union de Objetos 
+console.log("%c9.- Metodos para controlar la mutabilidad de los Objetos, Sellado (SEAL)",style_console);
