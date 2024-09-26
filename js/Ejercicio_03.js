@@ -85,7 +85,7 @@ let Producto2 =
 let Comprador = 
 {
     ID: 2532,
-    Nombre: "Danniel",
+    Nombre: "Daniel",
     Apellidos: "Suarez Escamilla",
     Tipo: "Frecuente",
     Correo: "230040@utxicotepec.edu.mx",
