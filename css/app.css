@@ -2,164 +2,100 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
 }
-<<<<<<< HEAD
-/*Define tamaño de fuente de toda la página y agrega márgenes de tipo caja*/
+
 body {
-    fontsize: 1.6rem;
+    font-size: 1.6rem;
     font-family: 'Lato', sans-serif;
-    background-color: gray;
+    background-color: #f6f8fa; 
+    margin: 0;
+    padding: 0;
 }
 
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
-/*Margin, Border y Padding*/
 header {
-    padding: 3rem 0;
-=======
-
-/* Define tamaño de fuente de toda la página y agrega márgenes de tipo caja */
-body {
-    font-size: 1.6rem;
-    font-family: 'Lato', sans-serif;
-    background-color: #f0f0f0; /* Cambiado a un color más claro para el fondo */
-    margin: 0;
-    padding: 0;
-}
-
-/* Margin, Border y Padding */
-header {
-    padding: 3rem 1rem; /* Añadido padding lateral para mejor visualización */
-    background-color: #333; /* Fondo oscuro para el header */
-    color: #fff; /* Texto blanco en el header */
->>>>>>> LuisDaniel-Practica3
+    padding: 3rem 1rem;
+    background-color: #24292e; 
+    color: #ffffff; 
 }
 
 header h1 {
     text-align: center;
-    color: wheat;
+    color: #ffffff;
     font-size: 6rem;
-<<<<<<< HEAD
+    margin: 0;
 }
 
 header p {
-    color:thistle;
+    color: #c9d1d9; 
     text-align: center;
     font-size: 3.2rem;
+    margin: 0;
 }
 
 header p a {
     text-decoration: none;
-    color:tomato;
-=======
-    margin: 0; /* Eliminado margen por defecto */
-}
-
-header p {
-    color: thistle;
-    text-align: center;
-    font-size: 3.2rem;
-    margin: 0; /* Eliminado margen por defecto */
-}
-
-header p strong {
-    color: #ff6347; /* Color para destacar el texto en negrita */
->>>>>>> LuisDaniel-Practica3
+    color: #2ea043; 
 }
 
 .DOM {
     max-width: 120rem;
-<<<<<<< HEAD
-    margin: 0 auto;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #ffffff; 
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .DOM h2 {
-    color: #fff;
-=======
-    margin: 2rem auto; /* Añadido margen superior e inferior */
-    padding: 1rem; /* Añadido padding para separación del borde */
-    background-color: #fff; /* Fondo blanco para el contenido */
-    border-radius: 1rem; /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidad */
-}
-
-.DOM h2 {
-    color: #333;
->>>>>>> LuisDaniel-Practica3
+    color: #24292e;  
     text-align: center;
 }
 
 .DOM nav a {
-<<<<<<< HEAD
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
-    margin-right: 10px;
-=======
-    color: #333;
+    color: #0366d6; 
     font-size: 1.6rem;
     text-decoration: none;
     margin-right: 1rem;
->>>>>>> LuisDaniel-Practica3
 }
 
 .DOM p {
-    color: #2563EB;
-<<<<<<< HEAD
-    font-size: 20px;
-=======
+    color: #24292e;
     font-size: 1.8rem;
-    text-align: center; /* Centrado del texto */
->>>>>>> LuisDaniel-Practica3
+    text-align: center;
 }
 
 .DOM #formulario {
     max-width: 500px;
     margin: 0 auto;
-<<<<<<< HEAD
-=======
-    padding: 2rem; /* Añadido padding al formulario */
->>>>>>> LuisDaniel-Practica3
+    padding: 2rem;
 }
 
 .DOM #formulario input {
     display: block;
     width: 100%;
-<<<<<<< HEAD
-    border: none;
+    border: 1px solid #e1e4e8; 
     margin-bottom: 2rem;
-    padding: 2rem;
-    border-radius: 1rem;
-=======
-    border: 1px solid #ddd; /* Bordes del input */
-    margin-bottom: 2rem;
-    padding: 1.5rem; /* Reducido padding para mejor proporción */
-    border-radius: 0.5rem; /* Bordes redondeados menores */
->>>>>>> LuisDaniel-Practica3
+    padding: 1.5rem;
+    border-radius: 0.5rem;
 }
 
 .alerta {
     padding: 1rem;
-<<<<<<< HEAD
-    text-align: center; 
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 20px;
-=======
     text-align: center;
-    color: #fff;
+    color: #ffffff;
     text-transform: uppercase;
-    font-size: 1.6rem; /* Ajustado tamaño de fuente */
-    border-radius: 0.5rem; /* Bordes redondeados */
-    margin: 1rem 0; /* Margen superior e inferior */
->>>>>>> LuisDaniel-Practica3
+    font-size: 1.6rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
 }
 
 .alerta.error {
-    background-color: rgb(162,0,0);
+    background-color: #d73a49; 
 }
 
 .alerta.exito {
-    background-color: rgb(7,145,7);
+    background-color: #2ea043; 
 }
